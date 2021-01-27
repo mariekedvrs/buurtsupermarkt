@@ -1,0 +1,376 @@
+body {
+	margin: 0 auto;
+	font-family: Avenir Next, sans-serif;
+}
+
+.nav {
+	overflow: hidden;
+	background-color: #333;
+	display: flex;
+}
+
+.nav-logo {
+	width: 40%;
+}
+
+
+h2 {
+	color: #7E2D2D;
+	text-align: center;
+
+}
+
+.grid-container {
+	display: grid;
+}
+
+.img01, .text01 {
+	background-color: #DFDFDF;
+	padding: 10px;
+	text-align: center;
+}
+
+.text01 {
+	text-align: justify;
+}
+
+.btn {
+	text-align: center;
+	padding: 15px;
+}
+
+.img02, .text02 {
+	background-color: #eee;
+	padding: 10px;
+	text-align: center;
+}
+
+.button {
+	background-color: #E99B01;
+	padding: 15px;
+	color: #fff;;
+	border: none;
+}
+
+.buurtsuper-item {
+	font-size: 18px;
+	color: #7E2D2D;
+	padding: 10%;
+	text-align: center;
+}
+
+.footer {
+	background-color: #E99B01;
+}
+
+.footer-bottom {
+	font-size: 10px;
+	text-align: center;
+}
+
+.icon-link {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/*---Nav menu mobile and tablet*/
+@media only screen and (max-width: 768px) {
+	.nav, .nav-item {
+		flex-direction: column;
+	}
+
+	.nav-item {
+		display: none;
+		margin-left: 0;
+	}
+
+	.nav-menu-toggle {
+		align-self: flex-end;
+		display: initial;
+		position: absolute;
+		cursor: pointer;
+	}
+
+	.nav-toggle-show {
+		display: flex;
+	}
+
+	.nav-link {
+		padding: 15px;
+		color: #E99B01;
+	}
+}
+
+/*----nav menu desktop----*/
+@media only screen and (min-width: 769px) {
+	.nav-item{
+		display: flex;
+		padding: 20px;
+	}
+
+	.nav-link {
+		padding: 30px;
+		margin-left: auto;
+		color: #E99B01;
+	}
+
+	.nav-menu-toggle {
+		display: none;
+	}
+}
+
+/*-------mobile----------*/
+@media only screen and (max-width: 425px) {
+
+	.logo {
+		width: 50%;
+		padding: 10px;
+	}
+
+	.banner {
+		width: 100%;
+		height: 200px;
+		background-image: url("img/winkel.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: left top;
+	}
+
+	.banner-item {
+		width: 100%;
+	}
+	.grid-container {
+		grid-template-columns: auto;
+	}
+
+	.img-item {
+		width: 90%;
+		padding: 20px;
+	}
+
+	.footer-text {
+		padding: 15px;
+	}
+
+	.text01 {
+		padding: 25px;
+	}
+
+	.animation {
+   		transition: width 2s, height 2s, ease-out 2s;
+	}
+
+	.animation:hover {
+		width: 100%;
+   		transform: scale(1.5);
+	}
+}
+
+/*-------tablet--------*/
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+	.logo {
+		width: 40%;
+		padding: 10px;
+	}
+
+	.grid-container {
+		grid-template-columns: 50% 50%;
+	}
+
+	.banner {
+		width: 100%;
+		height: 300px;
+		grid-column: 1 /span 2;
+		background-image: url("img/winkel.jpg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: left top;
+	}
+
+	.banner-item {
+		width: 100%;
+	}
+
+	.img-item {
+		width: 90%;
+		padding: 10px;
+	}
+
+	.text01 {
+		padding: 20px;
+	}
+
+	.text02 {
+		height: 404px;
+	}
+
+	.footer {
+		display: flex;
+	}
+
+	.footer-text {
+		padding: 15px;
+	}
+
+	.button {
+		font-size: 14px;
+	}
+
+	.animation {
+   		transition: width 2s, height 2s, ease-out 2s;
+	}
+
+	.animation:hover {
+		width: 100%;
+   		transform: scale(1.5);
+	}
+
+}
+
+/*desktop*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+	.logo {
+		width: 55%;
+		padding: 10px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+	.grid-container {
+		grid-template-columns: 50% 50%;
+	}
+
+	.banner {
+		width: 100%;
+		/*height: 300px;*/
+		grid-column: 1;
+		grid-row: 1 / span 2;
+		background-image: url("img/winkel.jpg");
+		background-repeat: no-repeat;
+		background-size: 500%;
+		background-position: center top;
+	}
+
+	.banner-item {
+		width: 100%;
+	}
+
+	.img-item {
+		width: 80%;
+	}
+
+	.img01 {
+		padding: 20px;
+	}
+	.text01 {
+		padding: 30px;
+	}
+
+	.footer-text {
+		padding: 75px;
+	}
+
+	.footer {
+		display: flex;
+	}
+	
+	.button {
+		font-size: 16px;
+	}
+
+	.animation {
+   		transition: width 2s, height 2s, ease-out 2s;
+	}
+
+	.animation:hover {
+		width: 100%;
+   		transform: scale(1.5);
+	}
+}
+
+/*desktop hd*/
+@media only screen and (min-width: 1025px) {
+
+	.logo {
+		width: 20%;
+		padding: 25px;
+	}
+
+	.nav-link {
+		font-size: 24px;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.grid-container {
+		grid-template-columns: 50% 50%;
+	}
+
+	.banner {
+		width: 100%;
+		/*height: 300px;*/
+		grid-column: 1;
+		grid-row: 1 / span 2;
+		background-image: url("img/winkel.jpg");
+		background-repeat: no-repeat;
+		background-size: 500%;
+		background-position: center top;
+	}
+
+	.banner-item {
+		width: 100%;
+	}
+
+	.img-item {
+		width: 70%;
+	}
+
+	.img01 {
+		padding: 50px;
+	}
+
+	.text01 {
+		padding: 100px;
+	}
+
+	.img02 {
+		padding: 80px;
+	}
+
+	.text02 {
+		padding: 20px;
+	}
+
+	.footer-text {
+		padding: 75px;
+	}
+
+	.footer {
+		display: flex;
+	}
+	
+	.button {
+		font-size: 18px;
+	}
+
+	.aanbiedingen {
+		font-size: 24px;
+	}
+
+	.animation {
+   		transition: width 2s, height 2s, ease-out 2s;
+	}
+
+	.animation:hover {
+		width: 100%;
+   		transform: scale(1.5);
+	}
+
+}
